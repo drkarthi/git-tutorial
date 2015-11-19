@@ -6,7 +6,7 @@ app = Flask(__name__)    #This is creating a new Flask object
 
 @app.route('/')          						#This is the main URL
 def index():
-    return render_template("index.html", name="index.html", title="Home")		#The argument should be in templates folder
+    return render_template("index.html", name="index.html")		#The argument should be in templates folder
 
 @app.route('/interests')
 def interests():
